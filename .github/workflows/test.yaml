@@ -1,1 +1,9 @@
+name: Test
+on: push
 
+jobs:
+  fedora-job:
+    runs-on: ubuntu-latest
+    container: fedora:38
+    steps:
+      - run: cat /etc/os-release
